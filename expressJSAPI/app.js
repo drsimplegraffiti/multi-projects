@@ -12,21 +12,21 @@ const app = express();
 
 
 //Handlebars middle-wares
-app.engine('handlebars', exphbs({ defaultLayout: 'main' }));
+app.engine('handlebars', exphbs());
 app.set('view engine', 'handlebars');
-
-// Homepage route
-app.get('/', (req, res) => res.render('index', { title: 'Players App', players }));
-
 
 //Body-parser middleware
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
+// Homepage route
+app.get('/', (req, res) => res.render('index', { title: 'Players App', players }));
+
 //set static folder
 app.use(express.static(path.join(__dirname, 'public')));
 //Players API Routes
-app.use('/api/players', require('./routes/api/players'))
+app.use('/api/players', require('./routes/api/players'));
+
 
 const PORT = process.env.PORT || 4000;
 app.listen(PORT, () => {
