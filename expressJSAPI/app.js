@@ -1,11 +1,22 @@
 const express = require('express');
 const path = require('path');
+const exphbs = require('express-handlebars');
 const logger = require('./middleware/logger')
+const players = require('./players');
+
 
 const app = express();
 
 // Init middleware
 // app.use(logger);
+
+
+//Handlebars middle-wares
+app.engine('handlebars', exphbs({ defaultLayout: 'main' }));
+app.set('view engine', 'handlebars');
+
+// Homepage route
+app.get('/', (req, res) => res.render('index', { title: 'Players App', players }));
 
 
 //Body-parser middleware

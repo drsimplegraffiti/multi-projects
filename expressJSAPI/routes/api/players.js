@@ -35,6 +35,7 @@ router.post('/', (req, res) => {
 
     players.push(newPlayer);
     res.json(players);
+    res.redirect('/')
 })
 
 
