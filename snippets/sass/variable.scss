@@ -1,0 +1,14 @@
+$primary-color:#3f3f3f;
+$secondary-color:#3c3a;
+$mobile-font: 12px;
+// body
+body {
+    color: $secondary-color;
+}
+
+//Or
+html {
+    font-size: 62.5%;
+    --header1: 4rem;
+    --main-color: black;
+}

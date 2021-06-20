@@ -1,0 +1,16 @@
+button {
+    margin: 20rem;
+    padding: 2rem 4rem;
+    background: none;
+    border: 0.4rem solid rgb(170, 21, 21);
+}
+
+
+/* Round button */
+
+button {
+    border-radius: 50%;
+    height: 2rem;
+}
+
+;
