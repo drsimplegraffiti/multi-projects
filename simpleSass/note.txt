@@ -1,0 +1,87 @@
+Sass variable uses the prefix $
+Sass uses nesting e.g
+nav{
+    ul{
+        margin: 0;
+        padding: 2px;
+    }
+    li{
+        display: flex;
+    }
+}
+
+// Modules and partials
+_base.scss
+@use 'base';
+
+// functions and mixins
+@mixin transform($property){
+    -webkit-transform: $property;
+    -ms-transform: $property;
+    transform: $property;
+}
+
+.box{@include transform(30deg);}
+
+
+//inheritance 
+%message-shared{
+    border: 1px solid #ccc;
+    padding: 19px;
+    color:#333
+}
+
+.message{
+    @extends %message-shared;
+}
+
+.success{
+    @extend %message-shared;
+    border-color:red;
+}
+
+.error{
+    @extend %message-shared;
+    border-color:blue;
+}
+
+
+// Operators
+.containers{
+    width:100%;
+}
+
+article[role*main]{
+    float:left;
+    width:600px / 960px * 100%;
+}
+
+article[role=*complementary]{
+    float:right;
+    width:300px / 960px * 100%;
+}
+
+//Conditionals
+@mixin triangle($size, $color, $direction){
+    height:0;
+    width:0;
+}
+
+border-color: transparent;
+border-style:solid;
+border-width:$size / 2;
+
+@if $direction == up{
+    border-bottom-color: $color;
+}@else if $direction == right{
+    border-left-color:
+$color;}@else {
+    error "unknown direction #(direction).*;
+}
+
+
+installing sass globally
+npm i -g sass
+
+Then run
+sass --watch scss/style.scss css/style.css

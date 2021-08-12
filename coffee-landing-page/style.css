@@ -41,7 +41,6 @@ header .logo {
 }
 
 .logo {
-    /* text-transform: uppercase; */
     cursor: pointer;
 }
 
@@ -57,7 +56,7 @@ header .logo {
 }
 
 .toggle.active {
-    background: url(https://i.ibb.co/rt3HybH/close.png);
+    background: url('https://i.ibb.co/rt3HybH/close.png');
     background-repeat: no-repeat;
     background-size: 25px;
     background-position: center;
