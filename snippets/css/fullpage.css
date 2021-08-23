@@ -1,0 +1,13 @@
+/* Full page */
+
+html,
+body {
+    height: 100%;
+}
+
+.container {
+    background: blue;
+    width: 80%;
+    height: 80%;
+    margin: auto;
+}

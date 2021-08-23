@@ -1,0 +1,18 @@
+@mixin flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+// To use
+.intro {
+    min-height: 100vh;
+    @include flex();
+}
+
+// Adding variable and mixin
+@mixin flex($direction, $justify) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

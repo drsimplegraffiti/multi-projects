@@ -1,0 +1,31 @@
+img {
+    width: 450px;
+    height: 300px;
+    margin: 10px;
+}
+
+
+/* flexbox */
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+/* EX 2 */
+
+.boxes {
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* grid */
+
+.boxes {
+    display: grid;
+    grid-template-columns: 10rem 10rem 10rem;
+    grid-template-columns: 10rem 1fr 10rem;
+}

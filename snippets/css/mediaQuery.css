@@ -1,0 +1,17 @@
+@media(max-width: 600px) {
+    body {
+        background: blue;
+    }
+    .mobile {
+        font-size: 2.4rem;
+    }
+}
+
+@media (min-width:500px) and (max-width: 1024px) {
+    body {
+        background: blue;
+    }
+    html {
+        font-size: 50%;
+    }
+}
