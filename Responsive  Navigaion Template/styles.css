@@ -64,6 +64,13 @@ a:hover {
     display: none;
 }
 
+.card img {
+    width: 100%;
+}
+
+
+/* MEDIA QUERIES STARTS */
+
 @media (max-width: 952px) {
     label.logo {
         font-size: 30px;

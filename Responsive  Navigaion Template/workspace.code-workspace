@@ -1,0 +1,15 @@
+{
+    "folders": [
+		{
+			"name": "multi-projects",
+			"path": ".."
+		},
+		{
+			"name": "ximple_weather_app",
+			"path": "..\\..\\Desktop\\ximple_weather_app"
+		}
+	],
+    "settings": {
+        "liveServer.settings.multiRootWorkspaceName": "multi-projects"
+    }
+}
